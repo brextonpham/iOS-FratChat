@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D60F4C951B3100DB0062EAFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F4C941B3100DB0062EAFC /* main.m */; };
+		D60F4C981B3100DB0062EAFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F4C971B3100DB0062EAFC /* AppDelegate.m */; };
+		D60F4C9B1B3100DB0062EAFC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F4C9A1B3100DB0062EAFC /* FirstViewController.m */; };
+		D60F4C9E1B3100DB0062EAFC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F4C9D1B3100DB0062EAFC /* SecondViewController.m */; };
+		D60F4CA11B3100DB0062EAFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60F4C9F1B3100DB0062EAFC /* Main.storyboard */; };
+		D60F4CA31B3100DB0062EAFC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60F4CA21B3100DB0062EAFC /* Images.xcassets */; };
+		D60F4CA61B3100DB0062EAFC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60F4CA41B3100DB0062EAFC /* LaunchScreen.xib */; };
+		D60F4CB21B3100DB0062EAFC /* FratChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D60F4CB11B3100DB0062EAFC /* FratChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D60F4CAC1B3100DB0062EAFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D60F4C871B3100DB0062EAFC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D60F4C8E1B3100DB0062EAFC;
+			remoteInfo = FratChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D60F4C8F1B3100DB0062EAFC /* FratChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FratChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60F4C931B3100DB0062EAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60F4C941B3100DB0062EAFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D60F4C961B3100DB0062EAFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D60F4C971B3100DB0062EAFC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D60F4C991B3100DB0062EAFC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D60F4C9A1B3100DB0062EAFC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D60F4C9C1B3100DB0062EAFC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		D60F4C9D1B3100DB0062EAFC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		D60F4CA01B3100DB0062EAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D60F4CA21B3100DB0062EAFC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D60F4CA51B3100DB0062EAFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D60F4CAB1B3100DB0062EAFC /* FratChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FratChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D60F4CB01B3100DB0062EAFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60F4CB11B3100DB0062EAFC /* FratChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FratChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D60F4C8C1B3100DB0062EAFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60F4CA81B3100DB0062EAFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D60F4C861B3100DB0062EAFC = {
+			isa = PBXGroup;
+			children = (
+				D60F4C911B3100DB0062EAFC /* FratChat */,
+				D60F4CAE1B3100DB0062EAFC /* FratChatTests */,
+				D60F4C901B3100DB0062EAFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D60F4C901B3100DB0062EAFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D60F4C8F1B3100DB0062EAFC /* FratChat.app */,
+				D60F4CAB1B3100DB0062EAFC /* FratChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D60F4C911B3100DB0062EAFC /* FratChat */ = {
+			isa = PBXGroup;
+			children = (
+				D60F4C961B3100DB0062EAFC /* AppDelegate.h */,
+				D60F4C971B3100DB0062EAFC /* AppDelegate.m */,
+				D60F4C991B3100DB0062EAFC /* FirstViewController.h */,
+				D60F4C9A1B3100DB0062EAFC /* FirstViewController.m */,
+				D60F4C9C1B3100DB0062EAFC /* SecondViewController.h */,
+				D60F4C9D1B3100DB0062EAFC /* SecondViewController.m */,
+				D60F4C9F1B3100DB0062EAFC /* Main.storyboard */,
+				D60F4CA21B3100DB0062EAFC /* Images.xcassets */,
+				D60F4CA41B3100DB0062EAFC /* LaunchScreen.xib */,
+				D60F4C921B3100DB0062EAFC /* Supporting Files */,
+			);
+			path = FratChat;
+			sourceTree = "<group>";
+		};
+		D60F4C921B3100DB0062EAFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60F4C931B3100DB0062EAFC /* Info.plist */,
+				D60F4C941B3100DB0062EAFC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D60F4CAE1B3100DB0062EAFC /* FratChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D60F4CB11B3100DB0062EAFC /* FratChatTests.m */,
+				D60F4CAF1B3100DB0062EAFC /* Supporting Files */,
+			);
+			path = FratChatTests;
+			sourceTree = "<group>";
+		};
+		D60F4CAF1B3100DB0062EAFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D60F4CB01B3100DB0062EAFC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D60F4C8E1B3100DB0062EAFC /* FratChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60F4CB51B3100DB0062EAFC /* Build configuration list for PBXNativeTarget "FratChat" */;
+			buildPhases = (
+				D60F4C8B1B3100DB0062EAFC /* Sources */,
+				D60F4C8C1B3100DB0062EAFC /* Frameworks */,
+				D60F4C8D1B3100DB0062EAFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FratChat;
+			productName = FratChat;
+			productReference = D60F4C8F1B3100DB0062EAFC /* FratChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D60F4CAA1B3100DB0062EAFC /* FratChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D60F4CB81B3100DB0062EAFC /* Build configuration list for PBXNativeTarget "FratChatTests" */;
+			buildPhases = (
+				D60F4CA71B3100DB0062EAFC /* Sources */,
+				D60F4CA81B3100DB0062EAFC /* Frameworks */,
+				D60F4CA91B3100DB0062EAFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D60F4CAD1B3100DB0062EAFC /* PBXTargetDependency */,
+			);
+			name = FratChatTests;
+			productName = FratChatTests;
+			productReference = D60F4CAB1B3100DB0062EAFC /* FratChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D60F4C871B3100DB0062EAFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Brexton Pham";
+				TargetAttributes = {
+					D60F4C8E1B3100DB0062EAFC = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					D60F4CAA1B3100DB0062EAFC = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = D60F4C8E1B3100DB0062EAFC;
+					};
+				};
+			};
+			buildConfigurationList = D60F4C8A1B3100DB0062EAFC /* Build configuration list for PBXProject "FratChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D60F4C861B3100DB0062EAFC;
+			productRefGroup = D60F4C901B3100DB0062EAFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D60F4C8E1B3100DB0062EAFC /* FratChat */,
+				D60F4CAA1B3100DB0062EAFC /* FratChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D60F4C8D1B3100DB0062EAFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60F4CA11B3100DB0062EAFC /* Main.storyboard in Resources */,
+				D60F4CA61B3100DB0062EAFC /* LaunchScreen.xib in Resources */,
+				D60F4CA31B3100DB0062EAFC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60F4CA91B3100DB0062EAFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D60F4C8B1B3100DB0062EAFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60F4C9E1B3100DB0062EAFC /* SecondViewController.m in Sources */,
+				D60F4C981B3100DB0062EAFC /* AppDelegate.m in Sources */,
+				D60F4C9B1B3100DB0062EAFC /* FirstViewController.m in Sources */,
+				D60F4C951B3100DB0062EAFC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60F4CA71B3100DB0062EAFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D60F4CB21B3100DB0062EAFC /* FratChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D60F4CAD1B3100DB0062EAFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D60F4C8E1B3100DB0062EAFC /* FratChat */;
+			targetProxy = D60F4CAC1B3100DB0062EAFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D60F4C9F1B3100DB0062EAFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60F4CA01B3100DB0062EAFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D60F4CA41B3100DB0062EAFC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60F4CA51B3100DB0062EAFC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D60F4CB31B3100DB0062EAFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D60F4CB41B3100DB0062EAFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D60F4CB61B3100DB0062EAFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FratChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D60F4CB71B3100DB0062EAFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FratChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D60F4CB91B3100DB0062EAFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FratChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FratChat.app/FratChat";
+			};
+			name = Debug;
+		};
+		D60F4CBA1B3100DB0062EAFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FratChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FratChat.app/FratChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D60F4C8A1B3100DB0062EAFC /* Build configuration list for PBXProject "FratChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60F4CB31B3100DB0062EAFC /* Debug */,
+				D60F4CB41B3100DB0062EAFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D60F4CB51B3100DB0062EAFC /* Build configuration list for PBXNativeTarget "FratChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60F4CB61B3100DB0062EAFC /* Debug */,
+				D60F4CB71B3100DB0062EAFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D60F4CB81B3100DB0062EAFC /* Build configuration list for PBXNativeTarget "FratChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D60F4CB91B3100DB0062EAFC /* Debug */,
+				D60F4CBA1B3100DB0062EAFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D60F4C871B3100DB0062EAFC /* Project object */;
+}
