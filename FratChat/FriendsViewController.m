@@ -18,12 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //retrieving friends relation for current user
-    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    //retrieving friends relation for current user
+    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
     
     //obtaining current user's friend query
     PFQuery *query = [self.friendsRelation query];

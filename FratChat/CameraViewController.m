@@ -17,13 +17,15 @@
 
 - (void)viewDidLoad { //happens once
     [super viewDidLoad];
-    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
+
     self.recipients = [[NSMutableArray alloc] init];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated { //refreshing, animating, etc.
     [super viewWillAppear:animated];
+    
+    self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
     
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
