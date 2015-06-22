@@ -94,6 +94,7 @@
     if ([fileType isEqualToString:@"image"]) {
         [self performSegueWithIdentifier:@"showImage" sender:self];
     } else {
+        //File type is video
         PFFile *videoFile = [self.selectedMessage objectForKey:@"file"];
         NSURL *fileUrl = [NSURL URLWithString:videoFile.url];
         self.moviePlayer.contentURL = fileUrl;
@@ -103,15 +104,19 @@
         
         [AVAssetImageGenerator assetImageGeneratorWithAsset:videoThumbnail];
         
+        //add it to view controller so we can see it
         [self.view addSubview:self.moviePlayer.view];
         [self.moviePlayer setFullscreen:YES animated:YES];
         
+        //delete it!
         NSMutableArray *recipientIds = [NSMutableArray arrayWithArray:[self.selectedMessage objectForKey:@"recipientIds"]];
         NSLog(@"Recipients: %@", recipientIds);
         
         if ([recipientIds count] == 1) {
+            //last recipient - delete
             [self.selectedMessage deleteInBackground];
         } else {
+            //remove recipient and then save it
             [recipientIds removeObject:[[PFUser currentUser] objectId]];
             [self.selectedMessage setObject:recipientIds forKey:@"recipientIds"];
             [self.selectedMessage saveInBackground];

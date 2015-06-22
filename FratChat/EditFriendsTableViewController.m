@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    PFQuery *query = [PFUser query];
+    
+    PFQuery *query = [PFUser query]; //queries all users by default
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (error) {
@@ -51,6 +52,7 @@
     PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
     cell.textLabel.text = user.username;
     
+    //adds checkmark if friend is user
     if ([self isFriend:user]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     } else {
@@ -69,22 +71,22 @@
     
     PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
     
-    if ([self isFriend:user]) {
-        cell.accessoryType = UITableViewCellAccessoryNone;
+    if ([self isFriend:user]) { //if user is friend, remove friend
+        cell.accessoryType = UITableViewCellAccessoryNone; //remove checkmark
         
-        for (PFUser *friend in self.friends) {
+        for (PFUser *friend in self.friends) { //remove user from array
             if ([friend.objectId isEqualToString:user.objectId]) {
                 [self.friends removeObject:friend];
                 break;
             }
         }
         
-        [friendsRelation removeObject:user];
+        [friendsRelation removeObject:user]; //remove from backend
         
-    } else {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        [self.friends addObject:user];
-        [friendsRelation addObject:user];
+    } else { //if user is not a friend, add friend
+        cell.accessoryType = UITableViewCellAccessoryCheckmark; //add checkmark
+        [self.friends addObject:user]; //add user to array
+        [friendsRelation addObject:user]; //add to backend
     }
     [self.currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
@@ -96,6 +98,7 @@
 
 #pragma mark - Helper methods
 
+//checks if a user is friend
 - (BOOL)isFriend:(PFUser *)user {
     for (PFUser *friend in self.friends) {
         if ([friend.objectId isEqualToString:user.objectId]) {

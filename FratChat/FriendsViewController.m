@@ -17,19 +17,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //retrieving friends relation for current user
     self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    //obtaining current user's friend query
     PFQuery *query = [self.friendsRelation query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (error) {
             NSLog(@"Error %@ %@", error, [error userInfo]);
         } else {
-            self.friends = objects;
-            [self.tableView reloadData];
+            self.friends = objects; //setting friends to array retrieved from parse
+            [self.tableView reloadData]; //reloading tableView
         }
     }];
 }

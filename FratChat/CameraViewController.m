@@ -15,14 +15,14 @@
 
 @implementation CameraViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad { //happens once
     [super viewDidLoad];
     self.friendsRelation = [[PFUser currentUser] objectForKey:@"friendsRelation"];
     self.recipients = [[NSMutableArray alloc] init];
     
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated { //refreshing, animating, etc.
     [super viewWillAppear:animated];
     
     PFQuery *query = [self.friendsRelation query];
@@ -36,16 +36,19 @@
         }
     }];
     
-    if (self.image == nil && [self.videoFilePath length] == 0) {
-        self.imagePicker = [[UIImagePickerController alloc] init];
-        self.imagePicker.delegate = self;
-        self.imagePicker.allowsEditing = NO;
-        self.imagePicker.videoMaximumDuration = 10;
     
+    //steps taken to set up camera
+    if (self.image == nil && [self.videoFilePath length] == 0) {
+        self.imagePicker = [[UIImagePickerController alloc] init]; //setting up UIImagePickerController
+        self.imagePicker.delegate = self;
+        self.imagePicker.allowsEditing = NO; //don't want users to edit in camera
+        self.imagePicker.videoMaximumDuration = 10;
+        
+        //checking if camera is available
         if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-            self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+            self.imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera; //allow camera
         } else {
-            self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+            self.imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary; //allow library
         }
     
         self.imagePicker.mediaTypes = [UIImagePickerController availableMediaTypesForSourceType:self.imagePicker.sourceType];
@@ -102,26 +105,27 @@
 
 #pragma mark - Image Picker Controller delegate
 
+//handles case when camera tab is dismissed
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
     [self dismissViewControllerAnimated:NO completion:nil];
     
-    [self.tabBarController setSelectedIndex:0];
+    [self.tabBarController setSelectedIndex:0]; //returns user back to first tab (inbox)
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     NSString *mediaType = [info objectForKey:UIImagePickerControllerMediaType];
     
-    if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) {
+    if ([mediaType isEqualToString:(NSString *)kUTTypeImage]) { //picking an image
         self.image = [info objectForKey:UIImagePickerControllerOriginalImage];
         if (self.imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
-            UIImageWriteToSavedPhotosAlbum(self.image, nil, nil, nil);
+            UIImageWriteToSavedPhotosAlbum(self.image, nil, nil, nil); //saving to local gallery
         }
-    } else {
+    } else { //picking a video
         NSURL *imagePickerURL = [info objectForKey:UIImagePickerControllerMediaURL];
         self.videoFilePath = [imagePickerURL path];
         if (self.imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
             if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(self.videoFilePath)) {
-                UISaveVideoAtPathToSavedPhotosAlbum(self.videoFilePath, nil, nil, nil);
+                UISaveVideoAtPathToSavedPhotosAlbum(self.videoFilePath, nil, nil, nil); //saving to local gallery
             }
         }
     }
